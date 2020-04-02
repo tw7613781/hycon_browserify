@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo</title>
+        <script src="hycon_utils.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <p>Hycon address validation</p>
+        <p>Hycon address: H4CUKg16a9AEz7TE5MgPstiYrzSYu9j6d</p>
+        <p id="ret1" ></p>
+        <p>Hycon address: H4CUKg16a9AEz7TE5MgPstiYrzSYu9j6</p>
+        <p id="ret2" ></p>
+        <script>
+            const addr1 = "H4CUKg16a9AEz7TE5MgPstiYrzSYu9j6d"
+            const addr2 = "H4CUKg16a9AEz7TE5MgPstiYrzSYu9j6"
+            const ret1 = hycon.validateAddr(addr1)
+            const ret2 = hycon.validateAddr(addr2)
+            document.getElementById("ret1").innerHTML = ret1
+            document.getElementById("ret2").innerHTML = ret2
+        </script>
+    </body>
+</html>
